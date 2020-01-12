@@ -1,0 +1,257 @@
+﻿@*<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>*@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Appino - Responsive App Landing Page" />
+    <meta name="author" content="iqonicthemes.in" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;Raleway:300,400,500,600,700,800,900">
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;Raleway:300,400,500,600,700,800,900">
+
+</head>
+
+<body>
+
+    <!-- loading -->
+
+    <div id="loading" class="green-bg">
+        <div id="loading-center">
+            <div class="boxLoading"></div>
+        </div>
+    </div>
+
+    <!-- loading End -->
+    <!-- Header -->
+
+    <header id="header-wrap" data-spy="affix" data-offset-top="55">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar navbar-default">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="javascript:void(0)">
+                                <img src='@Url.Content("~/Content/images/logo.png")' alt="logo"> 
+                            </a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right" id="top-menu">
+                                <li class="active"><a href="#iq-home">Home</a></li>
+                                <li><a href="#about-us">About Us</a></li>
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#screenshots">Screenshots</a></li>
+                                <li><a href="#team">Team</a></li>
+                                <li><a href="#pricing">Pricing</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="#contact-us">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header End -->
+    <!-- Banner -->
+  
+    <section id="iq-home" class="banner iq-bg iq-bg-fixed iq-box-shadow iq-over-black-90" style="background: url(images/banner/bg.jpg);">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="container">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="banner-text">
+                            <div class="row">
+                                <div class="col-sm-8 col-lg-8 col-md-8">
+                                    <h1 class="iq-font-white iq-tw-8" data-animation="animated fadeInLeft">
+                                        <small class="iq-font-white iq-tw-5"> <strong class="iq-font-white">&#9679;</strong> Appino provide amazing & outstanding feature</small>AWESOME MOBILE APP
+                                    </h1>
+                                    <div class="link">
+                                        <h5 class="iq-font-white" data-animation="animated fadeInLeft">Free Download Here</h5>
+                                        <ul class="list-inline" data-animation="animated fadeInUp">
+                                            <li><a href="javascript:void(0)"><i class="ion-social-apple"></i></a></li>
+                                            <li><a href="javascript:void(0)"><i class="ion-social-android"></i></a></li>
+                                            <li><a href="javascript:void(0)"><i class="ion-social-windows"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-lg-4 col-md-4 hidden-xs">
+                                    <div class="img-one pull-right">
+                                        <img class="img-responsive" data-animation="animated fadeInRight" src='@Url.Content("~/Content/images/banner/01.png")' alt="#"> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="banner-text">
+                            <div class="row">
+                                <div class="col-sm-4 col-lg-4 col-md-4 hidden-xs">
+                                    <div class="img-one pull-left">
+                                        <img class="img-responsive center-block" data-animation="animated fadeInLeft" src='@Url.Content("~/Content/images/banner/01.png")' alt="#">
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 col-lg-8 col-md-8">
+                                    <h1 class="iq-font-white iq-tw-8" data-animation="animated fadeInRight"><small class="iq-font-white iq-tw-5"><b class="iq-font-white">&#9679;</b> Appino provide amazing & outstanding feature</small>AWESOME MOBILE APP</h1>
+                                    <div class="link">
+                                        <h5 class="iq-font-white" data-animation="animated fadeInRight">Free Download Here</h5>
+                                        <ul class="list-inline" data-animation="animated fadeInUp">
+                                            <li><a href="javascript:void(0)"><i class="ion-social-apple"></i></a></li>
+                                            <li><a href="javascript:void(0)"><i class="ion-social-android"></i></a></li>
+                                            <li><a href="javascript:void(0)"><i class="ion-social-windows"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="banner-text">
+                            <div class="row">
+                                <div class="col-sm-8 col-lg-8 col-md-8">
+                                    <h1 class="iq-font-white iq-tw-8" data-animation="animated bounceInLeft"><small class="iq-font-white iq-tw-5"><b class="iq-font-white">&#9679;</b> Appino provide amazing & outstanding feature</small>AWESOME MOBILE APP</h1>
+                                    <div class="link">
+                                        <h5 class="iq-font-white" data-animation="animated bounceInRight">Free Download Here</h5>
+                                        <ul class="list-inline" data-animation="animated bounceInRight">
+                                            <li><a href="javascript:void(0)"><i class="ion-social-apple"></i></a></li>
+                                            <li><a href="javascript:void(0)"><i class="ion-social-android"></i></a></li>
+                                            <li><a href="javascript:void(0)"><i class="ion-social-windows"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-lg-4 col-md-4 hidden-xs">
+                                    <div class="img-one pull-right">
+                                        <img class="img-responsive center-block" data-animation="animated rotateInDownRight" src='@Url.Content("~/Content/images/banner/01.png")' alt="#">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner End -->
+
+    <div class="main-content">
+
+        @RenderBody()
+
+       
+
+        <!-- Get in Touch END -->
+        <!-- Footer -->
+
+        <footer class="iq-footer white-bg text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="footer-info iq-mt-50 iq-mb-30">
+                            <img id="logo_img" class="img-responsive center-block iq-mb-10 wow zoomIn" data-wow-duration="1s" src='@Url.Content("~/Content/images/logo-footer.png")' alt=""> 
+                            <p>Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="footer-copyright iq-ptb-20">© Copyright 2018 Appino Developed by <a target="_blank" href="https://iqonicthemes.com/">iqonicthemes</a>.</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Footer END -->
+
+    </div>
+
+    <!-- back-to-top -->
+
+    <div id="back-to-top">
+        <a class="top" id="top" href="#top"> <i class="ion-ios-upload-outline"></i> </a>
+    </div>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/custom")
+    @RenderSection("scripts", required: false)
+
+
+</body>
+
+</html>
